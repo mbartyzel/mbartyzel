@@ -1,0 +1,5 @@
+<beans>
+  <bean name="myShopService" type="pl.bnsit.java.foundations.beancontainer.ShopService"/>
+  <bean name="myUserDao" type="pl.bnsit.java.foundations.beancontainer.UserDao"/>
+  <bean name="secondShopService" type="pl.bnsit.java.foundations.beancontainer.ShopService"/>
+</beans>

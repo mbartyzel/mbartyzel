@@ -1,4 +1,4 @@
-package pl.bnsit.java.foundations.initmethod;
+package pl.bnsit.java.foundations.beancontainer.containerimpl;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

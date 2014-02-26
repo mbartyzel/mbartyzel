@@ -1,6 +1,6 @@
 package pl.bnsit.java.foundations.decompilation;
 
-import pl.bnsit.java.foundations.mapiterator.NotImplementedYetException;
+import pl.bnsit.java.foundations.NotImplementedYetException;
 
 
 public class Decompliler {
