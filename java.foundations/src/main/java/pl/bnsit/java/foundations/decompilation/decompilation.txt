@@ -1,2 +1,20 @@
 Napisz kod w klasie Decompiler, który dla danej skompilowanej klasy podanej w postaci Klasa.class,
-wygeneruje plik Klasa.java z kodem źródłowym (tylko sygnatury klasy, metod i pól)
+wygeneruje:
+
+Etap 1: Plik <klasa>.java z zawartością
+public class <klasa> {
+}
+
+Etap 2: Pola danej klasy wraz z typami:
+public class <klasa> {
+	<typ-pola> <nazwa-pola>;
+	...
+}
+
+Etap 3: Modyfikator public/protected/package/private pól
+public class <klasa> {
+	<modyfikator> <typ-pola> <nazwa-pola>;
+	...
+}
+
+Etap 4: Metody TYLKO z tej klasy z modyfikatorami public/protected/package/private
