@@ -1,0 +1,12 @@
+1. Zmodyfikuj kod, tak aby nie można było dodać adresów spoza Łodzi.
+	* Na ile to jest reużywalne?
+	* Jakie właściwe są tu odpowiedzialności?
+	* Co można dalej z tym zrobić?
+	* Jakie są konsekwencje tej implementacji?
+	
+2. Nie można też dodać adresów z Widzewa ;) (użyj MapService do określenia dzielicy)
+ * Napiszmy do teraz do tego testy
+ 
+ Wnioski
+ 	* Metody statyczne powodują dużo kłopotów
+ 	* Enkapsulacja na podstawie analizy odpowiedzialności skutkuje prostszymi testami.

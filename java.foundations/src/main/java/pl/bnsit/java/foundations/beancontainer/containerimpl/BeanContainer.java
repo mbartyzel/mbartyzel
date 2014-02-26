@@ -5,7 +5,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-import pl.bnsit.java.foundations.NotImplementedYetException;
 import pl.bnsit.java.foundations.beancontainer.containerimpl.ConfigurationReader.BeanEntry;
 
 public class BeanContainer {
@@ -35,8 +34,10 @@ public class BeanContainer {
 		for( BeanEntry beanEntry : definedBeans ) {
 			Object beanInstance = null;
 			try {
+				
 				Class<?> clazz = Class.forName( beanEntry.type );
 				beanInstance = clazz.newInstance();
+			
 			} catch (ClassNotFoundException | InstantiationException | IllegalAccessException e) {
 				throw new BeanContainerException( 
 						"Cannot instantize bean of " + beanEntry.type, e );

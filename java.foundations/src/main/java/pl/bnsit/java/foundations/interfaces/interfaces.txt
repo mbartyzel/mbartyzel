@@ -1,0 +1,6 @@
+1. Napisz klasy Employee, Section, Company, World korzystające z funkcjonalności
+Departamentu (tzn. wywołującego jego metody). 
+
+2. Które metody jest rzeczywiście sens udostępniać poszczególnym klasom współpracującym?
+
+@see "Po co nam interfejsy?", Software Developer's Journal 04/2011

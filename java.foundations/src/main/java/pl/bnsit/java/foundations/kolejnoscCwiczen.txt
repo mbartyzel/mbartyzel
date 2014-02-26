@@ -5,4 +5,6 @@ backup
 serialization
 autosetters
 decompilation
-initmethod
+beancontainer
+inheritance
+interfaces
