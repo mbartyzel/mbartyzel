@@ -1,0 +1,10 @@
+1. Zaiplementuj metode DepartmentDao.saveDepartment(Department). Obiekty nalezy zapisywac w pliku. Pochwal sie.
+
+2. Zaimplementuj metode DepartmentDao.loadDepartment(Long), która odczyta z dysku zapisany obiekt i wczyta go do pamieci. Pochwal sie.
+   
+ Czy mechanizm serializacji mozna wykorzystac do robienia deep copy obiektow?
+ 
+*) Zmodyfikuj klase Employee lub Department (np. dodaj pole) i ponownie spróbuj wczytac plik z dysku. 
+Zmodyfikuj DepartmentDao tak, aby taka operacja byla mozliwa
+
+**) Wykonaj zapis obiektu Department do pliku za pomoca biblioteki XStream. Na poczatek zapoznaj sie z Two-minute tutorial

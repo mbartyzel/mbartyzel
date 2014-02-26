@@ -1,0 +1,5 @@
+Zaiplementuj brakujące metody klasy MapIterator (moveNext(), key(), value()), tak
+aby można było poprawnie uruchomić kod z klasy Runner.
+
+*) Dodaj do MapIterator taką funkcjonalność, aby w momencie gdy ktoś doda/usunie elements do/z
+mapy, która jest właśnie iterowana, został rzucony wyjątek ConcurrentModificationException

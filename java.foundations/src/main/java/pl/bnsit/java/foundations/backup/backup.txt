@@ -1,0 +1,8 @@
+Zaimplementuj metodę makeBackup tak, aby robiła kopię zapasową tego pliku 
+pod nazwą 'backup.txt.bak'.
+
+*) Zaimplementuj metodę makeZippedBackup()
+1. Znajdź w sieci, deskryptor Mavena dla biblioteki zip4j i dołącz do projektu.
+2. Znajdź w sieci przykład, jak skompresować pojedynczy plik za pomocą biblioteki zip4j.
+3. Zaimplementuj tworzenie skompresowanej kopii zapasowej tego pliku.
+4. Zadbaj, aby Backupper zwracał zgłaszał wyjątki na swoim poziomie abstrakcji.

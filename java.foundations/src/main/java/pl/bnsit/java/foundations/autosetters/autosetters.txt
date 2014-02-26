@@ -1,0 +1,5 @@
+Zaimplementuj metodę Utill.printSetters, która na konsoli wygeneruje kod 
+z wywołaniami wszystkich istniejacych seterów. Np.
+employee.setName(  );
+employee.setAge(  )
+Nazwa zmiennej jest w konwencji cammel case i pochodzi od nazwy klasy.

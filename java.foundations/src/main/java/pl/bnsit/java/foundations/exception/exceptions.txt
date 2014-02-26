@@ -1,0 +1,6 @@
+Dodaj do stosu wyjątki obsługujące przepełnienie oraz błąd pustego stosu, 
+ * właściwe dla jego poziomu abstrakcji.
+ * 
+ * Użyj stosu w klasie Service np. service.addElement(), service.findElements().
+ * Rozbuduj obsługę wyjatków tak, aby service dawał swojemu klientowi odpowiednie
+ * informacje, o tym co się stało.

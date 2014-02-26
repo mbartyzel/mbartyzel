@@ -1,0 +1,4 @@
+Wczytaj zawartość tego pliku i wyświetl go na konsoli w całości. Pochwal się :)
+Następnie wczytaj tak, aby w jednym wierszu był tylko jeden wyraz. Pochwal się.
+
+P.S. Wykonując to zadanie, implementuj poszczególne kroki zapisane w komentarzach.

@@ -1,0 +1,2 @@
+Napisz kod w klasie Decompiler, który dla danej skompilowanej klasy podanej w postaci Klasa.class,
+wygeneruje plik Klasa.java z kodem źródłowym (tylko sygnatury klasy, metod i pól)

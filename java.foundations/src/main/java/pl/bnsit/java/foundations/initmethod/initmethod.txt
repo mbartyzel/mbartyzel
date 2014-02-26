@@ -1,0 +1,15 @@
+Zaimplementuj klasę AnnotationProcessor tak, aby wywoływała metody oznaczone
+adnotacją @Init.
+
+*) Kontener aplikacji
+1. Zaprojektuj plik XML, w który będą zdefinowane klasy, np.:
+<bean name="file" class="java.util.File" />. 
+Zaimplementuj wczytywanie tego pliku za pomocą biblioteki XStream.
+
+2. Zaimplementuj klasę BeanContainer oraz jej metodę getBean( name ), pobierającą
+utworzone przez kontener obiekty (zdefiniowane w pliku konfiguracyjnym). 
+Przykład działania:
+ObjectContainer container = new ObjectContainer( "app-cfg.xml" );
+File file = container.getBean( "file", File.class );
+
+3. Podczas tworzenia obiektów, kontener powinien interpretować adnotacje @Init.
