@@ -18,7 +18,6 @@ public class XmlSerializationDepartmentDao implements DepartmentDao {
 		
 		return INSTANCE;
 	}
-	
 
 	private XStream stream = new XStream( new DomDriver() );
 	
