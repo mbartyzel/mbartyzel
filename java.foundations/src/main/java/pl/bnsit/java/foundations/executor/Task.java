@@ -1,13 +1,13 @@
-package pl.bnsit.java.foundations.basicconcurrency;
+package pl.bnsit.java.foundations.executor;
 
 class Task implements Runnable {
 
 	private int id;
 
-	private BankAccount account;
+	private BankAccount holder;
 
-	public Task(BankAccount account, int id) {
-		this.account = account;
+	public Task(BankAccount holder, int id) {
+		this.holder = holder;
 		this.id = id;
 	}
 
@@ -15,7 +15,7 @@ class Task implements Runnable {
 	public void run() {
 		System.out.println("Thread #" + id + " is working");
 		for(int i = 0; i < 10; ++i ) {
-			account.transfer(1);
+			holder.transfer(1);
 			sleep(i * 50);
 		}
 	}

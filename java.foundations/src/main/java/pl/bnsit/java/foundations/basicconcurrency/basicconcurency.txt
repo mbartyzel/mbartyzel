@@ -7,3 +7,5 @@ Każde zadanie wykonuje pakiet przelewów na łączną kwotę 10zł.
 
 3. Wykorzystując niniejszy przykład, napisz klasę Value z metodami inc(), dec() i wykorzystaj wzorzec Immutable, 
 aby klasa była thread-safe. 
+
+4. Zapewnij thread-safety z a pomocą klasy Atomic*.

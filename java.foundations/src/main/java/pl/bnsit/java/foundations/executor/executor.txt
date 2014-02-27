@@ -1,0 +1,3 @@
+Zapoznaj się z przykładem użycia Excecutora.
+
+*) W klasie Runner napisz implemementację wielowątkowego sortowania listy.
