@@ -1,0 +1,9 @@
+Metoda BankAccount.transfer wykonuje przelew bankowy na zadaną kwotę.
+Każde zadanie wykonuje pakiet przelewów na łączną kwotę 10zł.
+
+1. Modyfikując stałą THREADS_NUM przetestuj poprawność przelewów dla 1, 2, 3 i więcej wątków.
+
+2. Wykorzystując synchronizację, zmodyfikuj funkcjonalność tak, aby przelewy wykonywały się poprawnie.
+
+3. Wykorzystując niniejszy przykład, napisz klasę Value z metodami inc(), dec() i wykorzystaj wzorzec Immutable, 
+aby klasa była thread-safe. 
