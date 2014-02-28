@@ -1,0 +1,7 @@
+Dodaj funkcjonalność "chatowania". W obszarze tekstowym pojawiają się kolejne
+przesłane wiersze w formacie:
+arek [28/02/2013:22:41]: Witaj!
+
+Dodaj przycisk czyszczenia okna chatu.
+
+Dodaj przycisk zapisu okna chatu do pliku. 

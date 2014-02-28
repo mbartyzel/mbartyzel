@@ -11,3 +11,5 @@ interfaces
 purejdbc
 basicconcurrency
 executor
+swing/layoutmanager
+swing/interaction
