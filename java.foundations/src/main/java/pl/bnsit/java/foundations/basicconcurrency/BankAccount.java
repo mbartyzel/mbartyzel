@@ -11,6 +11,6 @@ class BankAccount {
 
 	@Override
 	public String toString() {
-		return "from = " + from + " , to = " + to;
+		return "from = " + from + " , to = " + to + ". Bilans: " + (from + to) ;
 	}
 }

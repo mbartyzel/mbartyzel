@@ -4,7 +4,7 @@ package pl.bnsit.java.foundations.basicconcurrency;
 public class Runner {
 
 	public static void main(String[] args) throws InterruptedException {
-		final int THREADS_NUM = 1;
+		final int THREADS_NUM = 1000;
 		
 		BankAccount account = new BankAccount();
 		Thread[] threads = new Thread[ THREADS_NUM ];

@@ -5,7 +5,4 @@ Każde zadanie wykonuje pakiet przelewów na łączną kwotę 10zł.
 
 2. Wykorzystując synchronizację, zmodyfikuj funkcjonalność tak, aby przelewy wykonywały się poprawnie.
 
-3. Wykorzystując niniejszy przykład, napisz klasę Value z metodami inc(), dec() i wykorzystaj wzorzec Immutable, 
-aby klasa była thread-safe. 
-
-4. Zapewnij thread-safety z a pomocą klasy Atomic*.
+3. Wykorzystując niniejszy przykład, napisz klasę Value z metodami inc(), dec(). Zapewnij thread-safety z a pomocą klasy Atomic*.
