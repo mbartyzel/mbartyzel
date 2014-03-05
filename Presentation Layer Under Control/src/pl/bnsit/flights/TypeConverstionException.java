@@ -1,4 +1,4 @@
-package pl.bnsit.util;
+package pl.bnsit.flights;
 
 public class TypeConverstionException extends RuntimeException {
 

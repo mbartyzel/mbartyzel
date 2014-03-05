@@ -1,4 +1,4 @@
-package pl.bnsit.util;
+package pl.bnsit.flights;
 
 import java.util.HashMap;
 import java.util.Map;

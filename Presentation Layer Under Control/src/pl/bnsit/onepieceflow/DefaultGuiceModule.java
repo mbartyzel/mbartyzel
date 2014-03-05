@@ -13,11 +13,20 @@ import javax.annotation.PostConstruct;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
+import pl.bnsit.onepieceflow.board.BoardForm;
+import pl.bnsit.onepieceflow.board.BoardPresenter;
+import pl.bnsit.onepieceflow.board.BoardView;
+import pl.bnsit.onepieceflow.board.BoardViewObserver;
 import pl.bnsit.onepieceflow.card.CardForm;
-import pl.bnsit.onepieceflow.card.CardListener;
+import pl.bnsit.onepieceflow.card.CardFormEventHandler;
 import pl.bnsit.onepieceflow.card.CardPresenter;
 import pl.bnsit.onepieceflow.card.CardView;
 import pl.bnsit.onepieceflow.card.CardViewObserver;
+import pl.bnsit.onepieceflow.lane.LaneForm;
+import pl.bnsit.onepieceflow.lane.LaneFormEventHander;
+import pl.bnsit.onepieceflow.lane.LanePresenter;
+import pl.bnsit.onepieceflow.lane.LaneView;
+import pl.bnsit.onepieceflow.lane.LaneViewObserver;
 
 import com.google.common.base.Predicate;
 import com.google.common.eventbus.EventBus;
@@ -37,7 +46,14 @@ public class DefaultGuiceModule extends AbstractModule {
 	@Override
 	protected void configure() {
 
-		bind(CardListener.class);
+		bind(BoardView.class).to(BoardForm.class);
+		bind(BoardViewObserver.class).to(BoardPresenter.class);
+		
+		bind(LaneFormEventHander.class);
+		bind(LaneView.class).to(LaneForm.class);
+		bind(LaneViewObserver.class).to(LanePresenter.class);
+		
+		bind(CardFormEventHandler.class);
 		bind(CardView.class).to(CardForm.class);
 		bind(CardViewObserver.class).to(CardPresenter.class);
 		
@@ -89,10 +105,13 @@ public class DefaultGuiceModule extends AbstractModule {
 
 		JPanel form = injector.getInstance(clazz);
 		JFrame frame = new JFrame();
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setLayout(new BorderLayout());
 		frame.add(form, BorderLayout.CENTER);
-		centerJFrame(frame);
+		
 		frame.pack();
+		
+		centerJFrame(frame);
 		frame.setVisible(true);
 	}
 	

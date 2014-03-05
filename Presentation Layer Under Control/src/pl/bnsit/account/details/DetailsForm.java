@@ -12,7 +12,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-import pl.bnsit.util.ValueSetter;
+import pl.bnsit.flights.ValueSetter;
 
 import com.google.inject.Inject;
 

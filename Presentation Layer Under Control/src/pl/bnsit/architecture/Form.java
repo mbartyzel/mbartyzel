@@ -1,4 +1,4 @@
-package pl.bnsit.flights.viewmodel;
+package pl.bnsit.architecture;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -6,7 +6,7 @@ import java.util.Map;
 import javax.swing.JComponent;
 import javax.swing.JPanel;
 
-import pl.bnsit.util.ValueSetter;
+import pl.bnsit.flights.ValueSetter;
 
 @SuppressWarnings( "serial" )
 public class Form extends JPanel implements View {
@@ -14,6 +14,11 @@ public class Form extends JPanel implements View {
 	private ViewObserver viewObserver;
 	
 	private Map<String, JComponent> activeComponents = new HashMap<String, JComponent>();
+	
+	public void buildForm() {
+		
+		viewObserver.ready();
+	}
 	
 	@Override
 	public void updateComponent(String componentId, Object value) {

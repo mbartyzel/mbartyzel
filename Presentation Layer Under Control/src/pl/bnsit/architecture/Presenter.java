@@ -1,4 +1,4 @@
-package pl.bnsit.flights.viewmodel;
+package pl.bnsit.architecture;
 
 import org.apache.commons.beanutils.DynaBean;
 
@@ -13,5 +13,10 @@ public class Presenter implements ViewObserver {
 	@Override
 	public void updateViewModel(String property, Object value) {
 		viewModel.set(property, value);
+	}
+
+	@Override
+	public void ready() {
+		
 	}
 }

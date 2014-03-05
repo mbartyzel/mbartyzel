@@ -6,7 +6,7 @@ import java.awt.event.MouseMotionListener;
 
 import com.google.inject.Inject;
 
-public class CardListener implements MouseListener, MouseMotionListener {
+public class CardFormEventHandler implements MouseListener, MouseMotionListener {
 
 	private volatile int screenX = 0;
 	private volatile int screenY = 0;

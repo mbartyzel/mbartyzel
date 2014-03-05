@@ -8,7 +8,7 @@ import java.lang.reflect.Method;
 import javax.annotation.PostConstruct;
 
 import pl.bnsit.account.details.DetailsForm;
-import pl.bnsit.account.details.DetailsListener;
+import pl.bnsit.account.details.DetailsFormHandler;
 import pl.bnsit.account.details.DetailsPresenter;
 import pl.bnsit.account.details.DetailsView;
 import pl.bnsit.account.details.DetailsViewObserver;
@@ -34,7 +34,7 @@ public class DefaultGuiceModule extends AbstractModule {
 
 		bind(DetailsPresenter.class);
 		
-		bind(DetailsListener.class);
+		bind(DetailsFormHandler.class);
 
 		bind(DetailsView.class).to(DetailsForm.class);
 

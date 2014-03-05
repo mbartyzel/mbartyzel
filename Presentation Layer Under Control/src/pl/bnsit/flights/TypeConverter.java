@@ -1,4 +1,4 @@
-package pl.bnsit.util;
+package pl.bnsit.flights;
 
 public interface TypeConverter {
 	String toString( Object anObject );

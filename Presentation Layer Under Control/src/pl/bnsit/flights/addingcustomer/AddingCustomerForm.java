@@ -16,10 +16,10 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
+import pl.bnsit.flights.DateConverter;
 import pl.bnsit.flights.ObjectContainer;
-import pl.bnsit.util.DateConverter;
-import pl.bnsit.util.TypeConverter;
-import pl.bnsit.util.ValueSetter;
+import pl.bnsit.flights.TypeConverter;
+import pl.bnsit.flights.ValueSetter;
 
 public class AddingCustomerForm extends JFrame implements AddingCustomerView {
 
