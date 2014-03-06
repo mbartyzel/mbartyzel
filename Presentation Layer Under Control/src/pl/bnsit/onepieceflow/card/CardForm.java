@@ -37,12 +37,13 @@ public class CardForm extends RoundedPanel implements CardView {
 		viewObserver.ready();
 	}
 	
-	public static void main(String[] args) {
-		DefaultGuiceModule.runAndShowForm(CardForm.class);
-	}
-
 	@Override
 	public void draggAndDropp(int x, int y) {
 		setLocation(x, y);
 	}
+
+	public static void main(String[] args) {
+		DefaultGuiceModule.runAndShowForm(CardForm.class);
+	}
+
 }

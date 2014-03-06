@@ -22,7 +22,7 @@ public class DetailsForm extends JPanel implements DetailsView {
 	@Inject
 	private DetailsViewObserver viewObserver;
 	
-	private Map<String, JComponent> activeComponents = new HashMap<String, JComponent>();
+	private Map<String, JComponent> activeControls = new HashMap<String, JComponent>();
 	
 	@PostConstruct
 	public void buildForm() {
@@ -50,14 +50,14 @@ public class DetailsForm extends JPanel implements DetailsView {
 	}
 
 	@Override
-	public void updateComponent(String id, Object value) {
-		JComponent component = activeComponents.get(id);
+	public void updateControl(String id, Object value) {
+		JComponent component = activeControls.get(id);
 		ValueSetter valueSetter = ValueSetter.get( component.getClass() );
 		valueSetter.set(component, value);
 	}
 	
 	private <T extends JComponent> T asActive( String property, T component) {
-		activeComponents.put(property, component);
+		activeControls.put(property, component);
 		return component;
 	}
 }

@@ -21,7 +21,7 @@ public class Form extends JPanel implements View {
 	}
 	
 	@Override
-	public void updateComponent(String componentId, Object value) {
+	public void updateControl(String componentId, Object value) {
 		JComponent component = activeComponents.get(componentId);
 		ValueSetter.get(component.getClass()).set(component, value);
 	}

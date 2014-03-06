@@ -143,9 +143,9 @@ public class AddingCustomerForm extends JFrame implements AddingCustomerView {
 
 	@Override
 	public void updateComponent(String id, Object value) {
-		Object converterValue = convert(value);
+		Object convertedValue = convert(value);
 		JComponent component = components.get(id);
-		ValueSetter.get(component.getClass()).set(component, converterValue);
+		ValueSetter.get(component.getClass()).set(component, convertedValue);
 		
 	}
 

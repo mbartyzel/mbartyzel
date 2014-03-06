@@ -10,10 +10,6 @@ public class Presenter implements ViewObserver {
 	
 	private DynaBean viewModel;
 	
-	@Override
-	public void updateViewModel(String property, Object value) {
-		viewModel.set(property, value);
-	}
 
 	@Override
 	public void ready() {

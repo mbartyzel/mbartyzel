@@ -26,13 +26,13 @@ public class DetailsPresenter implements DetailsViewObserver {
 	}
 	
 	@Override
-	public void updateViewModel(String property, Object value) {
+	public void propertyChanged(String property, Object value) {
 		viewModel.set(property, value);
 	}
 	
 	public void updateView() {
-		view.updateComponent("email", viewModel.get("email"));
-		view.updateComponent("login", viewModel.get("login"));
+		view.updateControl("email", viewModel.get("email"));
+		view.updateControl("login", viewModel.get("login"));
 	}
 
 	@Override
