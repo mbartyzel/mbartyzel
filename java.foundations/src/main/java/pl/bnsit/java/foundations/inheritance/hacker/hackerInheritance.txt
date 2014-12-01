@@ -1,0 +1,20 @@
+Dodać możliwość wyliczania czynszu za wynajem pokoju. 
+Na czynsz składają się  opłata za metr kwadratowy pokoju, 
+opłata eksploatacyjna za metr kwadratowy pokoju a także marża 
+i opłata od luksusu. Marża oraz opłata od luksusu obliczane 
+są w zależności od rodzaju czynszu. W tej chwili istnieją następujące 
+rodzaje czynszu:
+
+1.	Studencki 
+	a.  marża od października do czerwca wynosi 20% ceny od metra, 
+		w pozostałych miesiącach 5%;
+	b.	opłata od luksusu wynosi 10% ceny od metra gdy jest jeden mieszkaniec, 
+		5% gdy jest dwóch mieszkańców oraz 2% przy większej ilości mieszkańców.
+
+2.	Kawalerka
+	a.	marża za pierwsze 3 miesiące wynosi 20% potem 8%;
+	b.	opłata od luksusu wnosi zawsze 13%;
+
+3.	Podwyższony standard
+	a.	nie ma marży;
+	b.	opłata od luksusu wynosi zawsze 37%.

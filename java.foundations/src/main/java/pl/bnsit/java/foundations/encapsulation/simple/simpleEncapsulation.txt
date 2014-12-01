@@ -1,0 +1,5 @@
+Napisz klasę Number, którą będzie można dodać do i pomnożyć przez inną liczbę
+
+*) Do klasy Number dodaj getter, który zmieni jego wewnętrzny stan.
+	Wywołaj getter w metodzie print(). 
+	Co się stanie? Jak się przed tym zabezpieczyć?

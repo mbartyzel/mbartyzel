@@ -1,0 +1,12 @@
+1. Stwórz klasy, który działanie przedstawiono w klasie Runner
+
+*) Zmodyfikuj kod aby wygodniej się z niego korzystało np:
+
+ Phone phone = new Phone();
+ PhoneNumber number = phone.press()
+					 	.five().zero().three()
+					 	.zero().six().two()
+					 	.four().two().one()
+					 	.now();
+					 	
+2. Dodaj możliwość porównywania ze sobą obiektów typu PhoneNumber
