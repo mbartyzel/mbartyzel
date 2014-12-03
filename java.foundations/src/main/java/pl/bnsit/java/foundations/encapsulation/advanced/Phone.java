@@ -1,5 +1,7 @@
 package pl.bnsit.java.foundations.encapsulation.advanced;
 
+import org.apache.commons.lang3.builder.ToStringBuilder;
+
 public class Phone {
 
 	public void pressFive() {
@@ -37,4 +39,9 @@ public class Phone {
 		
 	}
 
+	@Override
+	public String toString() {
+		return ToStringBuilder.reflectionToString(this);
+	}
+	
 }
